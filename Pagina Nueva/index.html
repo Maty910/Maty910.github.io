@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de tareas para hacer</title>
+</head>
+
+<header id="header">lista de tareas-
+    <button class="tema" id="tema">
+        Tema Oscuro     
+    </button>
+
+</header>
+<h1>
+    tareas de la semana-
+</h1>
+<body>
+    <div class="carousel">
+        <button class="left-button" onclick="moveLeft()">◀</button>
+        
+
+    <div class="semana-container">
+        
+    <div class="semana">
+        <div class="dia">
+            <div class="day-title">Lunes</div>
+            <ul class="tasks">
+
+                <li class="task-item">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+                
+                <li class="task-item">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+                
+                <li class="task-item">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+                
+                
+            </ul>
+        </div>
+
+        <div class="dia">
+            <div class="day-title">Martes</div>
+            <ul class="tasks">
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dia">
+            <div class="day-title">Miercoles</div>
+            <ul class="tasks">
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+                
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="dia">
+            <div class="day-title">Jueves</div>
+            <ul class="tasks">
+
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="dia">
+            <div class="day-title">Viernes</div>
+            <ul class="tasks">
+
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dia">
+            <div class="day-title">Sabado</div>
+            <ul class="tasks">
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+               <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dia">
+            <div class="day-title">Domingo</div>
+            <ul class="tasks">
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+
+                 <li class="task-item">
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="task-checkbox" onchange="tick(event)">
+                        <span class="checkmark">✔</span>
+                    </label>
+                    <div class="task-bar" contenteditable="true" id="tarea">Escribir tareas acá</div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <button class="right-button" onclick="moveRight()">▶</button>
+</div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
